@@ -1,0 +1,72 @@
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+      <Rule Match="Any">
+        <Rule Match="All">
+          <Property Name="Project" Value="Chess Tests" />
+          <Rule Match="Any">
+            <Rule Match="All">
+              <Property Name="Namespace" Value="Chess_Tests" />
+              <Rule Match="Any">
+                <Rule Match="All">
+                  <Property Name="Class" Value="Tests" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoPlaceWhiteBishop" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoPlaceWhiteBishop" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoPlaceBlackBishop" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoPlaceBlackBishop" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoPlaceQueen" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoPlaceQueen" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoPlaceKnights" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoPlaceKnights" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoPlaceRooksAndKingOrder" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoPlaceRooksAndKingOrder" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoRooksExist" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoRooksExist" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.Check960AlgoKingExists" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Check960AlgoKingExists" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Chess_Tests.Tests.CheckRowIsPopulated" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="CheckRowIsPopulated" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
