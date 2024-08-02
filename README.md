@@ -3,7 +3,7 @@
 # UNOFFICIAL FORK!
 # FIND THE ORIGINAL PROJECT HERE:
 
-[@thiagoservulo](https://github.com/ThiagoServulo/Chess)
+[Chess](https://github.com/ThiagoServulo/Chess)
 [@thiagoservulo](https://github.com/ThiagoServulo)
 
 ![Chess board][board_1]
