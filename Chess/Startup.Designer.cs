@@ -48,9 +48,11 @@ namespace Chess
             this.playChess960.Location = new System.Drawing.Point(322, 250);
             this.playChess960.Click += Play960;
 
-
             Controls.Add(this.playChess);
             Controls.Add(this.playChess960);
+
+            MinimizeBox = false;
+            MaximizeBox = false;
         }
 
         private void PlayChess(object sender, EventArgs e)
