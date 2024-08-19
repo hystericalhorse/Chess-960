@@ -50,56 +50,56 @@
             Position position = new Position(0, 0);
 
             // North direction (up)
-            position.SetPosition(CurrentPosition.Row - 1, CurrentPosition.Column);
+            position.SetPosition(TryOffsetPositionWithinBounds(CurrentPosition.Row, -1), CurrentPosition.Column);
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // Northeast direction (diagonal up right)
-            position.SetPosition(CurrentPosition.Row - 1, CurrentPosition.Column + 1);
+            position.SetPosition(TryOffsetPositionWithinBounds(CurrentPosition.Row, -1), TryOffsetPositionWithinBounds(CurrentPosition.Column, 1));
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // East direction (right)
-            position.SetPosition(CurrentPosition.Row, CurrentPosition.Column + 1);
+            position.SetPosition(CurrentPosition.Row, TryOffsetPositionWithinBounds(CurrentPosition.Column, 1));
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // Southeast direction (diagonal down right)
-            position.SetPosition(CurrentPosition.Row - 1, CurrentPosition.Column - 1);
+            position.SetPosition(TryOffsetPositionWithinBounds(CurrentPosition.Row, -1), TryOffsetPositionWithinBounds(CurrentPosition.Column, -1));
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // South direction (down)
-            position.SetPosition(CurrentPosition.Row + 1, CurrentPosition.Column);
+            position.SetPosition(TryOffsetPositionWithinBounds(CurrentPosition.Row, 1), CurrentPosition.Column);
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // Southwest direction (diagonal down left)
-            position.SetPosition(CurrentPosition.Row + 1, CurrentPosition.Column - 1);
+            position.SetPosition(TryOffsetPositionWithinBounds(CurrentPosition.Row, 1), TryOffsetPositionWithinBounds(CurrentPosition.Column, -1));
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // West direction (left)
-            position.SetPosition(CurrentPosition.Row, CurrentPosition.Column - 1);
+            position.SetPosition(CurrentPosition.Row, TryOffsetPositionWithinBounds(CurrentPosition.Column, -1));
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
             }
 
             // Northwest direction (diagonal up left)
-            position.SetPosition(CurrentPosition.Row + 1, CurrentPosition.Column + 1);
+            position.SetPosition(TryOffsetPositionWithinBounds(CurrentPosition.Row, 1), TryOffsetPositionWithinBounds(CurrentPosition.Column, 1));
             if (CanMove(position))
             {
                 matrix[position.Row, position.Column] = true;
